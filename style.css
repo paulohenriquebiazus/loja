@@ -4,10 +4,13 @@ body{
     "cabeca cabeca"
     "braco corpo"
     "peh peh";
-    grid-template-rows: 100px 500px 100px;
-    grid-template-columns: 400px auto;
+    grid-template-rows: 100px 500px auto 100px;
+    grid-template-columns: 1fr 2fr;
 }
-
+.letra{
+        background-color: aquamarine;
+        color: black;
+}
 header{
     background-color: blue;
     color: white;
@@ -18,21 +21,15 @@ aside{
     background-color: aqua;
     grid-area: braco;
 }
-
 main{
     background-color: black;
     color: white;
     grid-area: corpo;
 }
-
 footer{
     background-color: blue;
     color: white;
     grid-area: peh;
-}
-.letra{
-        background-color: aquamarine;
-        color: black;
 }
 
 @media only screen and (max-width: 850){
@@ -44,7 +41,7 @@ footer{
         "corpo"
         "peh";
         grid-template-rows: 100px 50px auto 100px;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 2fr;
     }
     .letra{
         color: black;
@@ -59,9 +56,23 @@ footer{
         "braco"
         "peh";
         grid-template-rows: 100px 500px auto 100px;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 2fr;
     }
     aside{
         display: none;
     }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    border: yellow 2px solid;
+    background-color: rgb(101, 101, 201);
+    width: 400px;
+    height: 650px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
 }
