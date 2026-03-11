@@ -4,13 +4,10 @@ body{
     "cabeca cabeca"
     "braco corpo"
     "peh peh";
-    grid-template-rows: 100px 500px auto 100px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 400px auto;
 }
-.letra{
-        background-color: aquamarine;
-        color: black;
-}
+
 header{
     background-color: blue;
     color: white;
@@ -21,58 +18,83 @@ aside{
     background-color: aqua;
     grid-area: braco;
 }
+
 main{
     background-color: black;
     color: white;
     grid-area: corpo;
 }
+
 footer{
     background-color: blue;
     color: white;
     grid-area: peh;
 }
 
-@media only screen and (max-width: 850){
-    body{
+@media only screen and (max-width: 850px){
+    .body{
         display: grid;
         grid-template-areas: 
         "cabeca"
-        "braco"
-        "corpo"
+        "braco corpo"
         "peh";
         grid-template-rows: 100px 50px auto 100px;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: auto;
     }
     .letra{
         color: black;
         background-color: aquamarine;
     }
 }
-@media only screen and (max-width:450){
-    body{
+@media only screen and (max-width:450px){
+    .body{
         display: grid;
         grid-template-areas: 
         "cabeca"
-        "braco"
+        "braco corpo"
         "peh";
-        grid-template-rows: 100px 500px auto 100px;
-        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px auto 100px;
+        grid-template-columns: auto;
     }
     aside{
         display: none;
     }
 }
-.card{
+.mae{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px;
-    align-items: center;
-    border: yellow 2px solid;
-    background-color: rgb(101, 101, 201);
-    width: 400px;
-    height: 650px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   border: black 2px solid;
+   background-color: #683be6;
+   width: 200px;
+   height: 350px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+}
+.imagem_produto{
+    width: 320px;
+}
+.d_produto{
+    color: rgb(0, 255, 34);
+    font-size: xx-large;
+}
+.p_produto{
+    color: rgb(208, 255, 0);
+    font-size: 40px;
+}
+.botao_produto{
+    font-size: 30px;
+    background-color: rgb(4, 0, 255);
+    color: violet;
+    width: 50%;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 20px;
 }
