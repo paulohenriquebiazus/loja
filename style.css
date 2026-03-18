@@ -1,100 +1,126 @@
 body{
     display: grid;
-    grid-template-areas: 
-    "cabeca cabeca"
-    "braco corpo"
-    "peh peh";
+    grid-template-areas:
+    "loja loja"
+    "de naosei"
+    "oque oque";
     grid-template-rows: 100px auto 100px;
     grid-template-columns: 400px auto;
 }
 
+
 header{
     background-color: blue;
-    color: white;
-    grid-area: cabeca;
+    grid-area: loja;
 }
 
 aside{
     background-color: aqua;
-    grid-area: braco;
+    grid-area: de;
+
 }
 
 main{
-    background-color: black;
-    color: white;
-    grid-area: corpo;
+    background-color: rgb(0, 27, 53);
+    grid-area: naosei;
 }
 
 footer{
     background-color: blue;
-    color: white;
-    grid-area: peh;
+    grid-area: oque;
 }
 
-@media only screen and (max-width: 850px){
-    .body{
+@media only screen and (max-width: 450px){
+    body{
         display: grid;
-        grid-template-areas: 
-        "cabeca"
-        "braco corpo"
-        "peh";
-        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+        "loja loja"
+        "de naosei"
+        "oque oque";
+        grid-template-rows: 100px 500px auto 100px;
         grid-template-columns: auto;
     }
-    .letra{
-        color: black;
-        background-color: aquamarine;
+auto{
+    display: none;
     }
 }
-@media only screen and (max-width:450px){
-    .body{
-        display: grid;
-        grid-template-areas: 
-        "cabeca"
-        "braco corpo"
-        "peh";
-        grid-template-rows: 100px auto 100px;
-        grid-template-columns: auto;
-    }
-    aside{
-        display: none;
-    }
-}
-.mae{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .card{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   padding: 50px;
-   border: black 2px solid;
-   background-color: #683be6;
-   width: 200px;
-   height: 350px;
-   border-radius: 10px;
-   text-align: center;
-   margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    border: rgb(255, 255, 255) 2px solid;
+    background-color: rgb(75, 75, 128);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
 }
+
 .imagem_produto{
-    width: 320px;
+    width: 250px;
 }
+
 .d_produto{
-    color: rgb(0, 255, 34);
-    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
 }
+
 .p_produto{
-    color: rgb(208, 255, 0);
-    font-size: 40px;
-}
-.botao_produto{
+    color: rgb(0, 255, 115);
     font-size: 30px;
-    background-color: rgb(4, 0, 255);
-    color: violet;
+}
+
+.botao_produto{
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
     width: 50%;
     text-decoration: none;
     height: 50px;
     border-radius: 20px;
+}
+
+.letra_botao{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.pais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 820px) {
+    body{
+        grid-template-areas:
+        "loja"
+        "de"
+        "naosei"
+        "oque";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px auto 200px;
+    }  
+    header img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas:
+        "loja"
+        "naosei"
+        "oque";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+    aside{
+        display: none;
+    }
 }
