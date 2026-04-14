@@ -91,6 +91,11 @@ auto{
 
 }
 
+.peixe{
+    width: 150px;
+    height: 100px;
+}
+
 .pais{
     display: flex;
     flex-wrap: wrap;
