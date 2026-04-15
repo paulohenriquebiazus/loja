@@ -1,0 +1,46 @@
+.card.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    border: rgb(255, 255, 255) 2px solid;
+    background-color: rgb(75, 75, 128);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.imagem_produto.c{
+    width: 250px;
+}
+
+.botao_produto.c{
+    font-size: 25px;
+    background-color: rgb(4, 0, 58);
+    width: 50%;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.letra_botao.c{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+    
+
+
+
+
+
+
+
+
+
